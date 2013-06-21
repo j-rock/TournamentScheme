@@ -28,11 +28,11 @@ Pretty cool, but a trivial demonstration of the power of the Tournament Scheme
 
 ####The tournament scheme is composed of a couple notions:
 
-*Particle: The abstraction around a particular solution for a problem
-*Evaluator: The algorithm which takes a list of particles and decides which ones are good/bad
-*Message: A simple case class to wrap up a Particle with added info: Winner or Loser
-*Table: An actor that holds evaluation rounds and dispatches evaluations to the tournament
-*Tournament: The environment which creates tables of particles and evolves particles
+ *Particle: The abstraction around a particular solution for a problem
+ *Evaluator: The algorithm which takes a list of particles and decides which ones are good/bad
+ *Message: A simple case class to wrap up a Particle with added info: Winner or Loser
+ *Table: An actor that holds evaluation rounds and dispatches evaluations to the tournament
+ *Tournament: The environment which creates tables of particles and evolves particles
 
 
 ####In order to use the tournament scheme, you gotta subclass the fundamental classes:
