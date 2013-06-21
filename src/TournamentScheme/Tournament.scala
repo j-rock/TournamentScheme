@@ -15,7 +15,7 @@ abstract class Tournament[SubParticle <: Particle](nPartsPerTable:Int, nTables:I
     def constructTable(ps:List[SubParticle], reference:Actor):Table[SubParticle]
 	private def generateTable(ps:List[SubParticle]) = constructTable(ps, self)
 	
-    def init(){
+    def go(){
       for(i <- 1 to nPartsPerTable*nTables){
         goodParticles enqueue (constructRandomParticle)
       }

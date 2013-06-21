@@ -15,6 +15,6 @@ class MathParticleTournament(nPartsPerTable:Int, nTables:Int, nGenerations:Int)
 object MathParticleTournament{
   def main(args:Array[String]){
     val tourney = new MathParticleTournament(50, 30, 20)
-    tourney.init
+    tourney.go
   }
 }
