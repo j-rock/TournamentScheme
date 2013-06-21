@@ -5,11 +5,10 @@ public abstract class Particle
     protected long[] position;
     protected long[] bestKnownPosition;
     protected long[] velocity;
-    
-    public Particle(){}
 
-    public Particle(int n, long[][] bounds)
+    public Particle(long[][] bounds)
     {
+    	int n = bounds[0].length;
         position = new long[n];
         bestKnownPosition = new long[n];
         velocity = new long[n];
@@ -35,8 +34,6 @@ public abstract class Particle
     		velocity[i] = p.velocity[i];
     	}
     }
-    
-    public abstract Particle copy();
     
     public void addWin()
     {

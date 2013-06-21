@@ -45,7 +45,6 @@ abstract class Tournament[SubParticle <: Particle](nPartsPerTable:Int, nTables:I
         moveBadParticlesToGood()
         generationCount += 1
         if(generationCount < nGenerations) updateAllGoodParticles()
-	    println("Best so far: " + bestParticle)
 	  }
       println("Best: " + bestParticle)
 	}

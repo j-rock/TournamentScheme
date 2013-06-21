@@ -4,25 +4,12 @@ import TournamentScheme.Particle;
 
 public class MathParticle extends Particle
 {
-    protected static long[][] bounds = { {-20, -20, -20, -20, -20, -20},
-                                         { 20,  20,  20,  20,  20,  20}};
-    
-    public Particle copy()
-    {
-    	MathParticle p2 = new MathParticle();
-        for(int i=0; i<position.length; i++)
-        {
-        	p2.position[i] = position[i];
-        	p2.bestKnownPosition[i] = bestKnownPosition[i];
-        	p2.velocity[i] = velocity[i];
-        }
-    	
-    	return p2;
-    }
+    protected static long[][] bounds = { {-20, -20, -20},
+                                         { 20,  20,  20}};
     
     public MathParticle()
     {
-        super(3, bounds);
+        super(bounds);
     }
 
     public double fitness()
